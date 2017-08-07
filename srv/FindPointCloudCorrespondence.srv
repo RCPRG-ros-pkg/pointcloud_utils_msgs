@@ -1,0 +1,16 @@
+geometry_msgs/Vector3[] pc1
+geometry_msgs/Vector3[] pc2
+---
+geometry_msgs/Vector3 translation
+
+geometry_msgs/Vector3[] pc1_keypoints
+geometry_msgs/Vector3[] pc2_keypoints
+
+Correspondences[] corr
+
+Segment[] seg1
+Segment[] seg2
+
+bool success
+string status_message
+

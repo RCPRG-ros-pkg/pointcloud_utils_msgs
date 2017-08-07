@@ -12,15 +12,17 @@ find_package(catkin REQUIRED
 #  CartesianImpedance.action
 #)
 
-#add_message_files(FILES
-#  CartesianImpedance.msg
-#  CartesianTrajectory.msg
-#  )
+add_message_files(FILES
+  FILES
+  Correspondences.msg
+  Segment.msg
+)
   
 add_service_files(
-  DIRECTORY srv
   FILES
   FindPlanes.srv
+  SimVisiblePointCloud.srv
+  FindPointCloudCorrespondence.srv
 )
 
 generate_messages(
